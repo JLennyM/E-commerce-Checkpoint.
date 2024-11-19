@@ -1,0 +1,96 @@
+.add-product {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 800px;
+    padding: 20px 40px; /* Adjusted for a cleaner feel */
+    margin: 20px auto; /* Centered the form */
+    border-radius: 8px; /* Slightly sharper corners */
+    background: #ffffff; /* Bright white for clarity */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    font-family: "Arial", sans-serif; /* Amazon-like font */
+}
+
+.add-product-itemfield {
+    width: 100%;
+    color: #555555; /* Darker, Amazon-like text color */
+    font-size: 16px;
+    margin-bottom: 15px; /* Added spacing between fields */
+}
+
+.add-product-itemfield input {
+    box-sizing: border-box;
+    width: 100%;
+    height: 45px; /* Reduced for Amazon's compact input design */
+    border-radius: 4px;
+    padding: 0 15px; /* Consistent padding */
+    border: 1px solid #dcdcdc; /* Lighter border similar to Amazon's inputs */
+    outline: none;
+    color: #333333; /* Text matches Amazon's input text style */
+    font-family: "Arial", sans-serif;
+    font-size: 14px;
+    transition: border-color 0.2s ease; /* Smooth focus effect */
+}
+
+.add-product-itemfield input:focus {
+    border-color: #007185; /* Amazon's accent blue */
+    box-shadow: 0 0 2px #007185; /* Subtle glow effect */
+}
+
+.add-product-price {
+    display: flex;
+    gap: 20px; /* Reduced for compact spacing */
+    margin-bottom: 15px; /* Consistent spacing */
+}
+
+.add-product-selector {
+    padding: 10px;
+    width: 100px;
+    height: 45px; /* Matches input height */
+    font-size: 14px;
+    color: #555555;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+    outline: none;
+    background: silver; /* Clear background */
+    transition: border-color 0.2s ease; /* Smooth focus effect */
+}
+
+.add-product-selector:focus {
+    border-color: #007185; /* Amazon's accent blue */
+    box-shadow: 0 0 2px #007185;
+}
+
+.addproduct-thumnail-image {
+    height: 120px;
+    width: 120px;
+    border-radius: 6px; /* Matches Amazon's rounded corners */
+    object-fit: contain;
+    margin: 10px 0;
+    border: 1px solid #dcdcdc; /* Light border for product thumbnails */
+}
+
+.addproduct-btn {
+    margin-top: 20px;
+    width: 160px;
+    height: 45px; /* Consistent button height */
+    border-radius: 6px;
+    background: #ffa41c; /* Amazon's signature orange */
+    border: none;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600; /* Improved readability */
+    transition: background 0.2s ease; /* Smooth hover effect */
+}
+
+.addproduct-btn:hover {
+    background: #ff8c00; /* Darker orange for hover */
+}
+
+@media (max-width: 800px) {
+    .add-product {
+        width: auto;
+        padding: 20px; /* Adjusted for smaller screens */
+        margin: 20px;
+    }
+}

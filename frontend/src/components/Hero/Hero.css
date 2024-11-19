@@ -1,0 +1,205 @@
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    background: linear-gradient(180deg, #e0e0e0, #ffffff 60%); /* More neutral background similar to Amazon's UI */
+    padding: 0 20px;
+}
+
+.hero_left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding-left: 120px;
+    line-height: 1.2;
+    max-width: 50%;
+}
+
+.hero_left h2 {
+    color: #090909;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.hero_left p {
+    color: #090909;
+    font-size: 72px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.hero-hand-icon {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.hero-hand-icon img {
+    width: 100px;
+    height: auto;
+}
+
+.hero-latest-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 280px;
+    height: 60px;
+    border-radius: 50px;
+    background-color: #b5ff3e; /* Red button color */
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.hero-latest-btn:hover {
+    background-color: #e03636;
+}
+
+.hero_right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Ensures the hover effect is contained within the image */
+}
+
+.hero_right img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container */
+    transition: transform 0.3s ease-in-out; /* Smooth zoom-in effect */
+    border-radius: 10px; /* Optional: Rounded corners for the image */
+}
+
+.hero_right img:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+@media (max-width: 1280px) {
+    .hero_left {
+        padding-left: 80px;
+    }
+
+    .hero_left h2 {
+        font-size: 24px;
+    }
+
+    .hero_left p {
+        font-size: 60px;
+    }
+
+    .hero-hand-icon img {
+        width: 80px;
+    }
+
+    .hero-latest-btn {
+        width: 240px;
+        height: 55px;
+        font-size: 15px;
+    }
+
+    .hero_right img {
+        max-height: 70vh;
+    }
+}
+
+@media (max-width: 1024px) {
+    .hero_left {
+        padding-left: 50px;
+    }
+
+    .hero_left h2 {
+        font-size: 20px;
+    }
+
+    .hero_left p {
+        font-size: 48px;
+    }
+
+    .hero-hand-icon img {
+        width: 65px;
+    }
+
+    .hero-latest-btn {
+        width: 200px;
+        height: 50px;
+        font-size: 14px;
+    }
+
+    .hero_right img {
+        max-height: 60vh;
+    }
+}
+
+@media (max-width: 800px) {
+    .hero {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .hero_left {
+        padding-left: 20px;
+        align-items: center;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .hero_left h2 {
+        font-size: 18px;
+    }
+
+    .hero_left p {
+        font-size: 40px;
+    }
+
+    .hero-hand-icon img {
+        width: 50px;
+    }
+
+    .hero-latest-btn {
+        width: 180px;
+        height: 45px;
+        font-size: 13px;
+    }
+
+    .hero_right img {
+        max-height: 50vh;
+    }
+}
+
+@media (max-width: 500px) {
+    .hero_left {
+        padding-left: 10px;
+        gap: 15px;
+    }
+
+    .hero_left h2 {
+        font-size: 16px;
+    }
+
+    .hero_left p {
+        font-size: 36px;
+    }
+
+    .hero-hand-icon img {
+        width: 45px;
+    }
+
+    .hero-latest-btn {
+        width: 160px;
+        height: 40px;
+        font-size: 12px;
+    }
+
+    .hero_right img {
+        max-height: 40vh;
+    }
+}

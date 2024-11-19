@@ -1,0 +1,64 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 15px; /* Further reduced padding for a smaller navbar */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    background: silver; /* Light background */
+    border-bottom: 1px solid #e0e0e0; /* Subtle bottom border */
+    font-family: "Arial", sans-serif;
+    position: sticky; /* Keeps navbar visible on scroll */
+    top: 0;
+    z-index: 10; /* Ensures it stays above other elements */
+    height: 50px; /* Reduced height for a compact navbar */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 6px; /* Reduced space between logo and text */
+}
+
+.nav-logo {
+    width: 80px; /* Shrunk logo size */
+    object-fit: contain; /* Ensures logo fits nicely */
+    cursor: pointer;
+}
+
+.logo-text {
+    font-size: 1rem; /* Reduced text size */
+    font-weight: bold;
+    color: #333; /* Text color */
+    text-transform: uppercase; /* Optional: make the text uppercase */
+    font-family: 'Arial', sans-serif; /* Matches navbar font */
+}
+
+.nav-profile {
+    width: 40px; /* Smaller profile size */
+    border-radius: 50%; /* Rounded profile image */
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Adds hover effect */
+}
+
+.nav-profile:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+@media (max-width: 800px) {
+    .navbar {
+        padding: 5px 10px; /* Adjusted padding for mobile */
+    }
+
+    .nav-logo {
+        width: 60px; /* Smaller logo for mobile */
+    }
+
+    .logo-text {
+        font-size: 0.8rem; /* Smaller text size for mobile */
+    }
+
+    .nav-profile {
+        width: 30px; /* Smaller profile size for mobile */
+    }
+}

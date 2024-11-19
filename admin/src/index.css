@@ -1,0 +1,10 @@
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif; /* Amazon uses sans-serif fonts similar to Arial */
+  background-color: #ffffff; /* Clean white background */
+  color: #111111; /* Dark text color for better readability */
+  height: 100vh;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  padding: 0;
+  box-sizing: border-box; /* Ensure consistent box model */
+}

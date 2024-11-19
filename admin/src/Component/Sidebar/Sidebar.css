@@ -1,0 +1,60 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    gap: 15px; /* Slightly reduced gap for compact design */
+    width: 100%;
+    max-width: 250px;
+    height: 100vh;
+    background: #f7f7f7; /* Light gray background for an Amazon-like feel */
+    border-right: 1px solid #e0e0e0; /* Subtle border for separation */
+    font-family: "Arial", sans-serif;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Adds slight depth */
+}
+
+.sidebar-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Aligns content to the left */
+    margin: 0 15px; /* Adds side margin for better spacing */
+    padding: 10px 15px; /* Slightly larger padding for better usability */
+    border-radius: 6px;
+    background: white; /* White background for contrast */
+    gap: 15px;
+    cursor: pointer;
+    color: #333333; /* Dark text for readability */
+    font-size: 14px; /* Standard font size */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effects */
+}
+
+.sidebar-item:hover {
+    background-color: #eaeaea; /* Subtle hover effect */
+    transform: translateX(5px); /* Slight animation on hover */
+}
+
+@media (max-width: 800px) {
+    .sidebar {
+        flex-direction: row; /* Changes layout to horizontal */
+        padding: 15px 10px; /* Adjusts padding for compact design */
+        gap: 10px;
+        width: 100%;
+        max-width: none; /* Removes width restriction */
+        height: auto; /* Allows the sidebar to fit content */
+        justify-content: center;
+        border-right: none; /* Removes the border for mobile */
+        box-shadow: none; /* Removes shadow for simplicity */
+        background: #ffffff; /* Matches a clean, flat mobile design */
+    }
+
+    .sidebar-item {
+        margin: 0;
+        padding: 8px 10px; /* Smaller padding for mobile */
+        font-size: 12px; /* Slightly smaller font for compactness */
+        gap: 10px;
+    }
+
+    .sidebar-item:hover {
+        transform: none; /* Simplifies hover effect for mobile */
+        background-color: #f7f7f7; /* Consistent hover effect */
+    }
+}

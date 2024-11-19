@@ -1,0 +1,182 @@
+/* General Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 1px 3px -2px black;
+    padding: 12px 40px;
+    background-color: #e0e6ec; /* Amazon's navbar background */
+    color: white;
+}
+
+.nav-menu {
+    display: flex;
+    list-style-type: none;
+    gap: 30px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.nav-menu li {
+    cursor: pointer;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-menu li:hover {
+    color: #ff9900; /* Amazon's hover color */
+}
+
+/* Navbar Logo */
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-logo p {
+    font-size: 30px;
+    font-weight: 600;
+    color: #ff9900; /* Amazon's logo color */
+}
+
+.nav-logo img {
+    width: 35px; /* Adjust size of the logo */
+}
+
+/* Login, Cart, and Button Styles */
+.nav-login-cart {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-login-cart button {
+    width: 140px;
+    height: 40px;
+    outline: none;
+    background-color: white;
+    border-radius: 30px;
+    border: 1px solid #ddd;
+    color: #232f3e;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-login-cart button:hover {
+    background-color: #f3f3f3;
+    color: #232f3e;
+}
+
+.nav-cart-count {
+    height: 22px;
+    width: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -35px;
+    margin-left: -40px;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+}
+
+/* Dropdown and Mobile Styles */
+.nav-dropdown {
+    display: none;
+}
+
+@media (max-width: 1280px) {
+    .navbar {
+        padding: 12px 30px;
+    }
+    .nav-logo img {
+        width: 30px;
+    }
+    .nav-menu {
+        gap: 20px;
+        font-size: 14px;
+    }
+    .nav-login-cart {
+        gap: 20px;
+    }
+    .nav-login-cart button {
+        width: 120px;
+        height: 35px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .navbar {
+        padding: 12px 20px;
+    }
+    .nav-menu {
+        gap: 15px;
+        font-size: 12px;
+    }
+    .nav-login-cart button {
+        width: 100px;
+        height: 30px;
+        font-size: 12px;
+    }
+    .nav-cart-count {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 800px) {
+    .navbar {
+        padding: 10px 20px;
+    }
+    .nav-menu {
+        display: none;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        right: 0;
+        background-color: #7c848f;
+        justify-content: center;
+        height: 60px;
+        width: 100%;
+        gap: 0;
+    }
+    .nav-menu-visible {
+        display: flex;
+    }
+    .nav-menu li {
+        padding: 10px;
+        text-align: center;
+    }
+    .nav-dropdown {
+        display: block;
+        width: 30px;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+    .nav-menu-open {
+        transform: rotate(90deg);
+    }
+}
+
+@media (max-width: 500px) {
+    .navbar {
+        padding: 10px 10px;
+    }
+    .nav-logo p {
+        font-size: 20px;
+    }
+    .nav-login-cart {
+        gap: 10px;
+    }
+    .nav-menu {
+        height: 50px;
+        top: 50px;
+    }
+    .nav-login-cart button {
+        width: 100px;
+        height: 30px;
+    }
+}

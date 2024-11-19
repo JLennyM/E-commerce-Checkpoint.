@@ -1,0 +1,159 @@
+.offers {
+    width: 65%;
+    height: 60vh;
+    display: flex;
+    padding: 0px 140px;
+    margin: 50px auto;
+    background: linear-gradient(180deg, #e0e0e0, #ffffff 60%); /* More neutral background similar to Amazon's UI */
+    border-radius: 10px; /* Rounded corners for a more modern look */
+}
+
+.offers_left {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+.offers_left h1 {
+    color: #171717;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.offers_left p {
+    font-size: 20px;
+    font-weight: 600;
+    color: #171717;
+}
+
+.offers_left button {
+    margin-left: 20px;
+    width: 282px;
+    height: 50px;
+    border-radius: 35px;
+    background:  #b5ff3e;
+    border: none;
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+    transition: background 0.3s ease; /* Smooth transition for the button */
+}
+
+.offers_left button:hover {
+    background: #e03333; /* Darker shade on hover */
+}
+
+.offers_right {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    align-items: center; /* Center the image vertically */
+    padding-top: 50px;
+    position: relative;
+}
+
+.offers_right img {
+    width: 100%; /* Make image responsive */
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the entire space without distortion */
+    border-radius: 10px; /* Round the image corners */
+    transition: transform 0.3s ease; /* Smooth transform on hover */
+}
+
+.offers_right img:hover {
+    transform: scale(1.1); /* Subtle zoom effect on hover */
+}
+
+/* Responsive Styles */
+@media(max-width: 1280px) {
+    .offers {
+        padding: 0px 80px;
+        margin-bottom: 120px;
+    }
+    .offers_left h1 {
+        font-size: 40px;
+    }
+    .offers_left p {
+        font-size: 18px;
+    }
+    .offers_right img {
+        width: 300px;
+    }
+    .offers_left button {
+        width: 220px;
+        height: 50px;
+        font-size: 18px;
+    }
+    .offers_right {
+        padding-top: 30px;
+    }
+}
+
+@media(max-width: 1024px) {
+    .offers {
+        padding: 0px 60px;
+        margin-bottom: 80px;
+        height: 40vh;
+    }
+    .offers_left h1 {
+        font-size: 30px;
+    }
+    .offers_left p {
+        font-size: 16px;
+    }
+    .offers_right img {
+        width: 200px;
+    }
+    .offers_left button {
+        width: 160px;
+        height: 40px;
+        font-size: 16px;
+    }
+    .offers_right {
+        padding-top: 10px;
+    }
+}
+
+@media(max-width: 800px) {
+    .offers {
+        margin-bottom: 60px;
+    }
+    .offers_left h1 {
+        font-size: 22px;
+    }
+    .offers_left p {
+        font-size: 13px;
+    }
+    .offers_right img {
+        width: 180px;
+    }
+    .offers_left button {
+        width: 140px;
+        height: 30px;
+        font-size: 12px;
+    }
+}
+
+@media(max-width: 500px) {
+    .offers {
+        height: 25vh;
+        margin-bottom: 50px;
+    }
+    .offers_left h1 {
+        font-size: 16px;
+    }
+    .offers_left p {
+        font-size: 10px;
+    }
+    .offers_right img {
+        width: 120px;
+    }
+    .offers_left button {
+        width: 120px;
+        height: 25px;
+        font-size: 10px;
+        margin-top: 12px;
+    }
+}

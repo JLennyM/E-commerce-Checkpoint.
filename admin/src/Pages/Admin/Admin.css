@@ -1,0 +1,22 @@
+.admin {
+    display: flex;
+    flex-direction: row; /* Default horizontal layout */
+    justify-content: space-between; /* Ensures equal spacing for child elements */
+    gap: 20px; /* Adds spacing between admin components */
+    padding: 20px; /* Padding for internal spacing */
+    width: 100%;
+    background: silver; /* Subtle background color for separation */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds slight shadow for depth */
+    border-radius: 8px; /* Soft rounded corners */
+    font-family: "Arial", sans-serif; /* Clean and professional font */
+}
+
+@media (max-width: 800px) {
+    .admin {
+        flex-direction: column; /* Switches to vertical layout on small screens */
+        padding: 15px; /* Adjusts padding for mobile view */
+        gap: 15px; /* Smaller spacing for compact design */
+        box-shadow: none; /* Removes shadow for a flat mobile design */
+        background: #2c2a2a; /* White background for simplicity */
+    }
+}

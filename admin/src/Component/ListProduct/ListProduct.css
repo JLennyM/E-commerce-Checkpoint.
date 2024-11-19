@@ -1,0 +1,76 @@
+.list-product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px; /* Restricts width for better alignment on larger screens */
+    height: auto; /* Allows flexible height */
+    padding: 20px 40px;
+    margin: 30px auto; /* Centered layout */
+    border-radius: 8px; /* Slightly rounded corners */
+    background: #f7f7f7; /* Light gray Amazon-like background */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border: 1px solid #e0e0e0; /* Light border for a cleaner look */
+    font-family: "Arial", sans-serif;
+}
+
+.listproduct-format-main {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr 1fr 1fr 1fr; /* Maintains original column layout */
+    gap: 10px;
+    width: 100%;
+    padding: 15px 0px; /* Adjusted for consistency */
+    color: #333333; /* Darker color for readability */
+    font-size: 14px; /* Standard Amazon-like font size */
+    font-weight: 600;
+    background: #ffffff; /* White background to differentiate rows */
+    border-bottom: 1px solid #dcdcdc; /* Adds subtle row separation */
+}
+
+.listproduct-format {
+    align-items: center;
+    font-weight: 500;
+    text-align: center; /* Aligns text properly for uniformity */
+}
+
+.listproduct-product-icon {
+    height: 80px;
+    object-fit: contain; /* Ensures image fits nicely */
+    margin: 5px auto; /* Centers the icon */
+}
+
+.listproduct-remove-icon {
+    margin: auto;
+    cursor: pointer;
+    color: #d93025; /* Red for delete/remove to mimic Amazon’s icon color */
+    transition: color 0.2s ease;
+}
+
+.listproduct-remove-icon:hover {
+    color: #ff4500; /* Brighter red on hover for feedback */
+}
+
+.listproduct-allproducts {
+    overflow-y: auto;
+    max-height: 500px; /* Restricts height to ensure scrolling when there are many products */
+    width: 100%;
+}
+
+@media (max-width: 800px) {
+    .list-product {
+        box-sizing: border-box;
+        width: 95%;
+        padding: 15px 20px;
+        margin: 20px auto;
+    }
+
+    .listproduct-format-main {
+        padding: 10px 0px;
+        color: #454545;
+        font-size: 12px; /* Smaller font size for mobile */
+    }
+
+    .listproduct-product-icon {
+        height: 60px;
+    }
+}
